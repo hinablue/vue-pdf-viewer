@@ -1,0 +1,65 @@
+{
+  "name": "vue-pdf-viewer",
+  "version": "1.0.0",
+  "description": "Pdf viewer with vue2 using pdf.js",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "build/build",
+    "watch": "rollup -c build/rollup.config.js --watch",
+    "test": "NODE_ENV=test jest"
+  },
+  "keywords": [
+    "vue.js",
+    "pdf",
+    "viewer"
+  ],
+  "author": "Hina Chen",
+  "license": "MIT",
+  "preDependencies": {
+    "vue": "^2.4.2"
+  },
+  "dependencies": {
+    "lodash.startcase": "^4.4.0",
+    "vue-functional-data-merge": "^1.0.6",
+    "pdfjs-dist": "^2.0.89"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-istanbul": "^4.1.5",
+    "codecov": "^3.0.0",
+    "cross-env": "^5.1.0",
+    "clean-css": "^4.1.9",
+    "eslint": "^4.10.0",
+    "eslint-plugin-html": "^3.2.2",
+    "eslint-plugin-vue": "^2.1.0",
+    "eslint-plugin-vue-libs": "^1.2.1",
+    "html-loader": "^0.5.1",
+    "jest": "^21.2.1",
+    "lodash": "^4.17.4",
+    "rollup": "^0.50.0",
+    "rollup-plugin-babel": "^3.0.2",
+    "rollup-plugin-commonjs": "^8.2.6",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-vue": "^2.5.2",
+    "rollup-watch": "^4.3.1",
+    "standard-version": "^4.2.0",
+    "uglify-es": "^3.1.6",
+    "vue-jest": "^1.0.0",
+    "vue-test-utils": "^1.0.0-beta.4"
+  },
+  "jest": {
+    "testRegex": "spec.js$",
+    "moduleFileExtensions": [
+      "js",
+      "vue"
+    ],
+    "transform": {
+      "^.+\\.js$": "babel-jest",
+      ".*\\.(vue)$": "vue-jest"
+    },
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true,
+    "mapCoverage": true
+  }
+}
